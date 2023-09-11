@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href = "../dist/main.css" />
+        <link rel="stylesheet" href="test.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script> -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css"> -->
+    </head>
+    <body>
+
+        <div class="main-wrapper">
+            <div class="page-top">
+                <div class="container">
+                    <!-- navbar -->
+                    <div class="navbar">
+                        <div class="navbar-l">
+                            <a href="index.html" class="navbar"><img class="logo-us" src="/task-boards-dashboard-tailwindcss-master/assets/images/logo.png" alt=""></a>
+                            <ul class="nav-list -translate-x-full lg:translate-x-0 transition-default">
+                                <button class="navbar-hide-btn" type="button">
+                                    <img src="../assets/icons/close-icon.svg" alt="">
+                                </button>
+                                <li class="nav-item">
+                                    <a href="usermanagement.html" class="nav-link">User Management</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="#" class="nav-link">Analytics</a>
+                                </li>
+                               
+                            </ul>
+                            <div class="navbar-show-btn" type="button">
+                                <img src="../assets/icons/menu-icon.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="navbar-r">
+                            <div class="nav-icon-btns">
+                                <input  type="text"
+                                     class="w-full border rounded-lg py-2 px-3 pl-10 focus:outline-none focus:ring focus:border-blue-500"
+                                      placeholder="Search..." />
+                                <button class="nav-icon-btn"> 
+                                    <img src="../assets/icons/search-icon.svg" alt="">
+                                </button>
+                               
+                            </div>
+
+                            <button class="nav-profile-btn">
+                                <div class="profile-btn-img">
+                                    <img src="../assets/images/person-3.jpg" alt="">
+                                </div>
+                                <!-- <img src="../assets/icons/chevron-down.svg" alt="" class="profile-btn-icon"> -->
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end of navbar -->
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="container">
+                    <div class="content-head">
+                        <!-- <h3 class="content-head-title">Tasks Board</h3> -->
+                       
+                        <div class="tab-r">    
+                            <button class="tab-r-btn ms-3">
+                                <img src="../assets/icons/funnel-icon.svg" class="tab-r-btn-icon" alt="">
+                                <span class="tab-r-btn-text">Filters</span>
+                            </button>
+                        </div>
+                        <button class="content-head-btn">Show Sales</button>
+                    </div>
+                  
+                    
+                    </div>
+
+                    <!-- <div class="content-tab">
+                        <div class="content-tab-head">
+                            <div class="tab-l">
+                                <ul class="tab-btns">
+                                    <li class="tab-btn-item active">
+                                        <button class="tab-btn-link" type="button">Overview</button>
+                                    </li>
+                                    <li class="tab-btn-item">
+                                        <button class="tab-btn-link" type="button">Tasks</button>
+                                    </li>
+                                    <li class="tab-btn-item">
+                                        <button class="tab-btn-link" type="button">Milestones</button>
+                                    </li>
+                                    <li class="tab-btn-item">
+                                        <button class="tab-btn-link" type="button">Messages</button>
+                                    </li>
+                                    <li class="tab-btn-item">
+                                        <button class="tab-btn-link" type="button">Files</button>
+                                    </li>
+                                    <li class="tab-btn-item">
+                                        <button class="tab-btn-link" type="button">Time</button>
+                                    </li>
+                                    <li class="tab-btn-item">
+                                        <button class="tab-btn-link" type="button">Comments</button>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            
+                            
+                            <div id="home-content">
+                                <div id="box-list">
+                                  <div class="box">
+                                    <div>
+                                      <h2>Total&nbsp;Order</h2>
+                                      <h1>40,876</h1>
+                                      <span class="day-details"><i class='bx bx-up-arrow-alt'></i>Up&nbsp;form&nbsp;yesterday</span>
+                                    </div>  
+                                      <div class="card-bx"><span class="card"><i class='bx bx-cart-alt'></i></span></div>  
+                                  </div>
+                                  <div class="box">
+                                    <div>
+                                      <h2>Total&nbsp;Sales</h2>
+                                      <h1>38,876</h1>
+                                      <span class="day-details"><i class='bx bx-up-arrow-alt'></i>Up&nbsp;form&nbsp;yesterday</span>
+                                    </div>  
+                                      <div class="card-bx"><span class="card"><i class='bx bx-cart-alt'></i></span></div>  
+                                  </div>
+                                  <div class="box">
+                                    <div>
+                                      <h2>Total&nbsp;Order</h2>
+                                      <h1>$12,876</h1>
+                                      <span class="day-details"><i class='bx bx-up-arrow-alt'></i>Up&nbsp;form&nbsp;yesterday</span>
+                                    </div>  
+                                      <div class="card-bx"><span class="card"><i class='bx bx-cart-alt'></i></span></div>  
+                                  </div>
+                                  <div class="box">
+                                    <div>
+                                      <h2>Total&nbsp;Return</h2>
+                                      <h1>11,086</h1>
+                                      <span class="day-details"><i class='bx bx-down-arrow-alt'></i>Down&nbsp;From&nbsp;Today</span>
+                                    </div>  
+                                      <div class="card-bx"><span class="card"><i class='bx bx-cart-alt'></i></span></div>
+                                  </div>
+                                </div>
+                               <div id="main-content"> 
+                                <div id="resent-sale">
+                                  <div class="heading">Resent Sales</div>
+                                  <table>
+                                    <tr>
+                                      <th>Date</th>
+                                      <th>Costomer</th>
+                                      <th>Sales</th>
+                                      <th>Total</th>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>JayaKanna</td>
+                                      <td>Returned</td>
+                                      <td>&#8377;1,20,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>Viswanathan</td>
+                                      <td>Delivered</td>
+                                      <td>&#8377;1,00,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>Uma</td>
+                                      <td>Delivered</td>
+                                      <td>&#8377;80,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>MuraliKrishna</td>
+                                      <td>Pending</td>
+                                      <td>&#8377;75,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>Dhanalakshmi</td>
+                                      <td>Delivered</td>
+                                      <td>&#8377;50,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>Kumaar</td>
+                                      <td>Pending</td>
+                                      <td>&#8377;90,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>KavithaSree</td>
+                                      <td>Returned</td>
+                                      <td>&#8377;40,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>Rohini</td>
+                                      <td>Delivered</td>
+                                      <td>&#8377;25,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>17 Jul 2021</td>
+                                      <td>Aghil</td>
+                                      <td>Returned</td>
+                                      <td>&#8377;20,000</td>
+                                    </tr>
+                                  </table>
+                                  <div id="button">
+                                    <span>See All</span>
+                                  </div>
+                                </div>
+                                <div id="top-sale">
+                                  <div class="heading">Top Seling Product</div>
+                                  <div id="top-sel-costomer">
+                                    <div class="t-s-c-list">
+                                     <div class="split-section"> 
+                                      <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                      <span class="t-s-c-name">JayaKanna</span>
+                                     </div>  
+                                      <span class="t-s-c-price">&#8377;1,40,000</span>
+                                    </div>
+                                    <div class="t-s-c-list">
+                                     <div class="split-section"> 
+                                      <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                      <span class="t-s-c-name">Viswanathan</span>
+                                     </div>  
+                                      <span class="t-s-c-price">&#8377;1,00,000</span>
+                                    </div>
+                                    <div class="t-s-c-list">
+                                     <div class="split-section"> 
+                                      <img src="https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                      <span class="t-s-c-name">Uma</span>
+                                     </div>  
+                                      <span class="t-s-c-price">&#8377;80,000</span>
+                                    </div>
+                                    <div class="t-s-c-list">
+                                     <div class="split-section"> 
+                                      <img src="https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                      <span class="t-s-c-name">MuraliKrishna</span>
+                                     </div>  
+                                      <span class="t-s-c-price">&#8377;75,000</span>
+                                    </div>
+                                    <div class="t-s-c-list">
+                                     <div class="split-section"> 
+                                      <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                      <span class="t-s-c-name">Dhanalakshmi</span>
+                                     </div>  
+                                      <span class="t-s-c-price">&#8377;50,000</span>
+                                    </div>
+                                    <div class="t-s-c-list">
+                                     <div class="split-section"> 
+                                      <img src="https://images.pexels.com/photos/206648/pexels-photo-206648.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                      <span class="t-s-c-name">Sugaprakash</span>
+                                     </div>  
+                                      <span class="t-s-c-price">&#8377;90,000</span>
+                                    </div>
+                                    <div class="t-s-c-list">
+                                     <div class="split-section"> 
+                                      <img src="https://images.pexels.com/photos/409126/pexels-photo-409126.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                      <span class="t-s-c-name">DeebanSankar</span>
+                                     </div>  
+                                      <span class="t-s-c-price">&#8377;80,000</span>
+                                    </div>
+                                    <div class="t-s-c-list">
+                                     <div class="split-section"> 
+                                      <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                      <span class="t-s-c-name">Dhivya</span>
+                                     </div>  
+                                      <span class="t-s-c-price">&#8377;25,000</span>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>  
+                              </div>
+                            </div>
+                            <footer class="section-p1">
+                                <div style="background-color: black; opacity: 0;">u</div>
+                                <div class="copyright">
+                                    <p>® 2023, Urban Space - Sales & Service </p>
+                                </div>
+                            </footer>  
+                                
+                             
+
+
+        <script src="./script.js"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    </body>
+</html>
